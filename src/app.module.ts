@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common';
+import { SendgridModule } from './infra/sendgrid/sendgrid.module';
 
 @Module({
-  imports: [],
+  imports: [SendgridModule],
   controllers: [],
   providers: [],
 })
